@@ -1,0 +1,97 @@
+.detailsPageWrapper {
+  display: flex;
+  border-bottom: 1px solid grey;
+}
+.button {
+  display: block;
+  margin: 10px;
+  min-width: 100px;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  font-weight: 700;
+  opacity: 0.6;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.posterWrapper {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.descrWrapper {
+  padding-top: 70px;
+  padding-left: 30px;
+}
+
+.title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.overview {
+  display: flex;
+  align-items: flex-start;
+  width: 400px;
+  margin-bottom: 20px;
+}
+.score,
+.genres {
+  display: flex;
+  align-items: flex-end;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.overviewSpan {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  padding-right: 30px;
+}
+
+.scoreSpan {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  padding-right: 5px;
+}
+.genresSpan {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  padding-right: 50px;
+}
+
+.editionalInfo {
+  display: flex;
+}
+
+.editionalInfoItem {
+  margin: 10px;
+  margin-right: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.NavLink {
+  display: inline-block;
+  font-size: large;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(32, 31, 31);
+  width: 100px;
+  padding: 15px;
+  text-align: center;
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+  &:hover {
+    color: rgb(218, 57, 105);
+  }
+}
+.NavLinkActive {
+  color: rgb(107, 151, 49);
+}

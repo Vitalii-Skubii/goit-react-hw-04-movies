@@ -21,7 +21,7 @@ const NotFound = lazy(() =>
 );
 const App = () => {
   return (
-    <div>
+    <div className="Wrapper">
       <Appbar />
       <Suspense fallback={<h1>Downloading...</h1>}>
         <Switch>

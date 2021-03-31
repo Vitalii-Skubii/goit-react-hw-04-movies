@@ -1,15 +1,16 @@
 import React from 'react';
-import routes from '../routes';
+import routes from '../../routes';
 import { NavLink } from 'react-router-dom';
+import s from './Appbar.module.scss';
 const Appbar = () => {
   return (
-    <header>
+    <header className={s.appbar}>
       <nav>
         <NavLink
           exact
           to={routes.home}
-          className="NavLink"
-          activeClassName="NavLink--active"
+          className={s.NavLink}
+          activeClassName={s.NavLinkActive}
         >
           Home
         </NavLink>
@@ -17,8 +18,8 @@ const Appbar = () => {
         <NavLink
           exact
           to={routes.movies}
-          className="NavLink"
-          activeClassName="NavLink--active"
+          className={s.NavLink}
+          activeClassName={s.NavLinkActive}
         >
           Movies
         </NavLink>

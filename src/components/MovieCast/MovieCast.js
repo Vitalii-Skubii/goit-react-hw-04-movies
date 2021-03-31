@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { fetchMovieCast } from '../services/FetchAPI';
+import { fetchMovieCast } from '../../services/FetchAPI';
+import s from './MovieCast.module.scss';
 class MovieCast extends Component {
   state = { cast: [] };
 
@@ -16,9 +17,9 @@ class MovieCast extends Component {
           {this.state.cast.map(
             (actor, index) =>
               index < 8 && (
-                <li key={actor.id}>
+                <li className={s.item} key={actor.id}>
                   <img src={`${profilePhoto}${actor.profile_path}`} alt="" />
-                  <p>{actor.name}</p>
+                  <p className={s.name}>{actor.name}</p>
                   <p>Character:{actor.character}</p>
                 </li>
               ),

@@ -1,3 +1,8 @@
+.appbar {
+  border-bottom: 1px solid grey;
+  margin-bottom: 20px;
+}
+
 .NavLink {
   display: inline-block;
   font-size: large;
@@ -14,6 +19,6 @@
     color: rgb(218, 57, 105);
   }
 }
-.NavLink--active {
+.NavLinkActive {
   color: rgb(107, 151, 49);
 }

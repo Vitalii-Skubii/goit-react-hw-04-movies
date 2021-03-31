@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-starter-kit"]=this["webpackJsonpreact-starter-kit"]||[]).push([[4],{92:function(t,e,r){"use strict";r.r(e);r(0);var n=r(1);e.default=function(){return Object(n.jsx)("h1",{children:"404 Page not Found"})}}}]);
+//# sourceMappingURL=NotFound.c99c6a88.chunk.js.map

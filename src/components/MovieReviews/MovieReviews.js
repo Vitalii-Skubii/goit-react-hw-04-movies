@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { fetchMovieReviews } from '../services/FetchAPI';
+import { fetchMovieReviews } from '../../services/FetchAPI';
+import s from './MovieReviews.module.scss';
 class MovieReviews extends Component {
   state = { results: [] };
   async componentDidMount() {
@@ -13,8 +14,8 @@ class MovieReviews extends Component {
         {this.state.results.length > 0 ? (
           <ul>
             {this.state.results.map(result => (
-              <li key={result.id}>
-                <h1>Author:{result.author}</h1>
+              <li className={s.item} key={result.id}>
+                <h1 className={s.author}>Author:{result.author}</h1>
                 <p>{result.content}</p>
               </li>
             ))}

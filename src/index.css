@@ -11,11 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.NavLink {
-  font-size: 20px;
-  color: currentColor;
-}
-.NavLink--active {
-  color: rgb(192, 87, 87);
+.Wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
 }
